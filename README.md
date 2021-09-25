@@ -10,3 +10,4 @@ This file include all the code used for analyzing the data.
 Bikeshare.py
 ### Credits
 [W3 Schools is very useful](https://www.w3schools.com/python/).
+[Elzero playlist has wonderful explanation](https://www.youtube.com/watch?v=mvZHDpCHphk&list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs).
