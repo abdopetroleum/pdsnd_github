@@ -219,7 +219,13 @@ def see_five_rows(df,iterator):
         print(df.iloc[iterator:iterator + 5])
         iterator += 5
         see_five_rows(df,iterator)
-
+# Assure that user enter a valid response to know if he wantsto continue or not
+def asking_for_continuing():
+    restart = input('\nWould you like to restart? Enter yes or no.\n')
+    if restart.lower() != 'yes' and restart.lower()!='no':
+        print("Please enter a valid answer")
+        restart=asking_for_continuing()
+    return restart
 
 def main():
     while True:
@@ -234,8 +240,8 @@ def main():
         user_stats(df)
         i = 0
         see_five_rows(df,0)
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart=asking_for_continuing()
+        if restart.lower()!='yes':
             break
 
 
