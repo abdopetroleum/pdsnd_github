@@ -1,10 +1,13 @@
 import time
 import pandas as pd
 import numpy as np
+# Declaring some data structures of choices we will use for filtering
 
+# city choices
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
+# Month choices
 MONTH_DATA = {'january': 1,
               'february': 2,
               'march': 3,
@@ -12,9 +15,10 @@ MONTH_DATA = {'january': 1,
               'may': 5,
               'june': 6
               }
+# day choices
 DAY_DATA = ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
 available=False
-# asking user to filter for day , moth, both or none
+# Ways of Filtering
 choices = ['month', 'day', 'both', 'none']
 
 
